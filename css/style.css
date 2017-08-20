@@ -1,4 +1,8 @@
 
+*   {
+	margin: 0;
+	padding: 0;
+	}
 body {
     background: url(../img/flag_small.jpg) no-repeat center center fixed;
     -webkit-background-size: cover;
@@ -7,7 +11,7 @@ body {
     background-size: cover;
     font: normal 100% Arial, Helvetica, sans-serif;
   	color: #000;
-    }
+	}
 .main-container {
     width: 900px;
     height: auto;
@@ -17,8 +21,7 @@ body {
     margin-bottom: 0px;
     margin-left: auto;
     border-radius: 8px;
-    }
-
+	}
 p 	{ 
     padding-left: 30px;
     padding-right: 30px;
@@ -26,30 +29,26 @@ p 	{
   	line-height: 1.7em;
   	font-size: 100% 
   	}
-
-h1 {
+h1  {
   	padding: 25px;
   	text-align: center;
   	margin-top: 30px;
   	margin-bottom: 0px;
   	}
-
-h2 {
+h2  {
 	padding: 10px;
 	text-align: center;
 	}
-
 .img-align {
 	text-align: center;
-	padding-top: 10px;
-}
-
+	padding-top: 20px;
+	padding-bottom: 20px;
+	}
 .menu-bar-container {
 	padding-left: 20px;
 	padding-bottom: 30px;
 	}
-
-ul.menu-bar{
+ul.menu-bar {
 	margin: 0; 
 	padding-left: 10px;
 	list-style: 0;
@@ -62,7 +61,7 @@ ul.menu-bar{
 	display: inline-block; 
 	font-size: 16px; 
 	}
-	ul.menu-bar li a{
+	ul.menu-bar li a {
 	color: white; 
 	display: block; 
 	padding: 7px 20px; 
@@ -81,9 +80,9 @@ ul.menu-bar{
 
 .filmography-img {
 	width: 400px;
-	padding-top: 95px;
+	padding-top: 50px;
 	padding-left: 30px;
-}
+	}
 
 .filmography {
 	padding-right: 20px;
@@ -96,10 +95,9 @@ ul.menu-bar{
 	position: relative;
 	width: 900px;
 	overflow: hidden;
-}
+	}
 .rewards-img {
-	padding-top: 97px;
-	
+	padding-top: 57px;
 	}
 .rewards {
 	width: 420px;
