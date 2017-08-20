@@ -73,11 +73,13 @@ ul.menu-bar {
 	}
 
 .filmography-container {
-	overflow: hidden;
-	position: relative;
 	width: 900px;
 	}
-
+.clearfix:after {
+	content: '';
+	clear: both;
+	display: block;
+}
 .filmography-img {
 	width: 400px;
 	padding-top: 50px;
@@ -92,9 +94,7 @@ ul.menu-bar {
 	}
 
 .rewards-container {
-	position: relative;
 	width: 900px;
-	overflow: hidden;
 	}
 .rewards-img {
 	padding-top: 57px;
