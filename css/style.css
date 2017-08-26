@@ -55,6 +55,7 @@ header {
 	z-index: 1000;
 	width: 900px;
 	background: rgba(239, 224, 155, 1);
+	text-align: center;
 	display: block;
 	}
 ul.menu-bar {
