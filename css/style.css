@@ -12,12 +12,15 @@ body {
 .main-container {
 	width: 900px;
 	height: auto;
-	background: rgba(245, 222, 179, 0.7);
+	background: rgba(239, 224, 155, 1);
 	margin-top: 0px; 
 	margin-right: auto;
 	margin-bottom: 0px;
 	margin-left: auto;
 	border-radius: 8px;
+	}
+.menu-bar-container {
+	padding-bottom: 30px;
 	}
 p { 
 	padding-left: 30px;
@@ -27,7 +30,7 @@ p {
 	font-size: 100% 
 	}
 h1 {
-	padding: 25px;
+	padding: 20px;
 	text-align: center;
 	margin-top: 30px;
 	margin-bottom: 0px;
@@ -36,35 +39,45 @@ h2 {
 	padding: 10px;
 	text-align: center;
 	}
+header {
+	height: 100px;
+	display: block;
+}
 .img-align {
 	text-align: center;
 	padding-top: 20px;
 	padding-bottom: 20px;
+	margin-top: 20px;
 	}
-.menu-bar-container {
-	padding-left: 20px;
-	padding-bottom: 30px;
+#top_nav {
+	top: 100px;
+	position: fixed;
+	z-index: 1000;
+	width: 900px;
+	background: rgba(239, 224, 155, 1);
+	display: block;
 	}
 ul.menu-bar {
 	margin: 0; 
-	padding-left: 10px;
 	list-style-type: none;
 	}
-	ul.menu-bar li {
+ul.menu-bar li {
 	margin: 2px; 
 	padding: 2px; 
 	text-align: center; 
 	background: #044bb5; 
 	display: inline-block; 
-	font-size: 16px; 
+	font-size: 16px;
+	border-radius: 5px;
+	margin-left: 30px;
 	}
-	ul.menu-bar li a {
+ul.menu-bar li a {
 	color: white; 
 	display: block; 
 	padding: 7px 20px; 
 	text-decoration: none; 
 	}
-	ul.menu-bar li:hover {
+ul.menu-bar li:hover {
 	background: #c5ba05; 
 	color: #fff; 
 	}

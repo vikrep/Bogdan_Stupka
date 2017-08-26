@@ -5,6 +5,27 @@
 <title>Bogdan Stupka</title>
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+	<script>
+		var h_hght = 100;
+		var h_mrg = 0;
+		$(function(){
+			var elem = $('#top_nav');
+			var top = $(this).scrollTop();
+			if(top > h_hght){
+				elem.css('top', h_mrg);
+			}           
+			$(window).scroll(function(){
+				top = $(this).scrollTop();
+				if (top+h_mrg < h_hght) {
+					elem.css('top', (h_hght-top));
+				} else {
+					elem.css('top', h_mrg);
+				}
+			});
+		});
+	</script>
+
 </head>
 
 <body>
@@ -12,20 +33,20 @@
 
 <header>
 	<h1><strong>Bogdan Stupka</strong></h1>
-		<div class="menu-bar-container">
+</header>
+		<nav id="top_nav" style="top: 100px;">
 			<ul class="menu-bar">
 				<li><a href="#bio">Biography</a></li>
 				<li><a href="#film">Selected filmography</a></li>
 				<li><a href="#rew">Rewards</a></li>
 				<li><a href="#link">Links</a></li>
 			</ul>
-		</div>
+		</nav>
 	<div class="img-align">
 		<img src="img/Stupka.jpg" alt="Photo Bogdan Stupka in a hat" width=840>
 	</div>
 	<p> <em>Who does not know the legendary Ukrainian Bohdan Stupka? This is a true colossus of the modern Ukrainian Theatre, which has become an icon and an example for inheritance for thousands of graduates of theatre schools and ordinary Ukrainians.</em></p>
-</header>
-
+	
 	<div class="Biography">
 		<h2 id="bio">Biography</h2>
 			<p>Bohdan Sylvestrovych Stupka (Ukrainian: Богдан Сильвестрович Ступка; 27 August 1941 – 22 July 2012) was a popular Ukrainian actor and the minister of culture of Ukraine. <br>Bogdan Stupka was born in 1941 in the village of Kulikovo, Lviv region. Love for art Bogdan instilled since childhood. And it is no wonder since the theatre was almost a family affair: his father worked as an artist Lviv Opera Choir, soloist played Uncle, aunt and was the main accompanist. The early years of the future great artist went on behind the scenes of the theatre. And in 14 years, he has tried his hand at the scene. The theatre took him, and in 1961 he graduated from the drama studio at the Lviv Ukrainian Theater. Mary Zankovetska. In the same theatre, he began his career. In 1978, actor Bogdan Stupka became the Kyiv Academic Ukrainian Drama Theatre. Franko. And 23 years later, he led the team and became its artistic director.Mortar is not too interested in politics. In 1999-2001, he very successfully served as Minister of Culture and Arts of Ukraine, but still decided to go back to the theatre. The dream of his life was that Ukrainian culture has become known throughout the world. And it steps by step, trying to fulfil this dream. Although employment in the theatre Bohdan Stupka thought that in the world there is nothing more important than family. So he tried to spend as much time with their families as possible. With a smile on his lips, he called his family “Stupak clan.” And today it is a real dynasty because the stage is now his son Ostap, grandchildren and Dmitri Bogdan. Bogdan Silvestrovich always said that it is not the role of the domain. Most importantly, he wanted to leave behind – a new generation. Even the young actors of the theatre he affectionately called his children. Bohdan Stupka was buried on Baikove Cemetery in Kyiv.</p>
@@ -73,8 +94,8 @@
 		</div>
 	</div>
 	<div class="img-align clearfix">
-		<img src="img/bogdan_stupka.jpg" alt="Photo Bogdan Stupka winks" width="600">
-		<img src="img/Stupka_2.jpg" alt="Photo Bogdan Stupka in the role of Taras Bulba" width="600">
+		<img style="margin-bottom: 20px" src="img/bogdan_stupka.jpg" alt="Photo Bogdan Stupka winks" width="600">
+		<img style="margin-bottom: 20px" src="img/Stupka_2.jpg" alt="Photo Bogdan Stupka in the role of Taras Bulba" width="600">
 		<img src="img/Stupka_5.jpg" alt="Photo Bogdan Stupka in the role of Taras Bulba_3" width="600">
 	</div>
 	<div class="rewards-container clearfix">
